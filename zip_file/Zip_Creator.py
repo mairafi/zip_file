@@ -15,14 +15,14 @@ def make_archive(filepaths, dest_dir):
 if __name__ == '__main__':
     make_archive(filepaths = ['One.py', 'main.py'], dest_dir = 'dest')
 
-# Zip_Creator.py
-# import zipfile
-# import os
-#
-# def make_archive(filepaths, dest_dir):
-#     """Compress the provided files into a ZIP archive in the specified destination folder."""
-#     archive_name = os.path.join(dest_dir, "compressed_files.zip")
-#     with zipfile.ZipFile(archive_name, 'w') as archive:
-#         for filepath in filepaths:
-#             archive.write(filepath, os.path.basename(filepath))
-#     print(f"Files compressed successfully into {archive_name}")
+Zip_Creator.py
+import zipfile
+import os
+
+def make_archive(filepaths, dest_dir):
+    """Compress the provided files into a ZIP archive in the specified destination folder."""
+    archive_name = os.path.join(dest_dir, "compressed_files.zip")
+    with zipfile.ZipFile(archive_name, 'w') as archive:
+        for filepath in filepaths:
+            archive.write(filepath, os.path.basename(filepath))
+    print(f"Files compressed successfully into {archive_name}")
